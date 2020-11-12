@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @uses {wp-editor} for WP editor styles.
  * @since 1.0.0
  */
-function cj_blocks_cgb_block_assets() { // phpcs:ignore
+function cj_blocks_cgb_block_assets() { 
 	// Register block styles for both frontend + backend.
 	wp_register_style(
 		'cj_blocks-cgb-style-css', // Handle.
@@ -54,15 +54,15 @@ function cj_blocks_cgb_block_assets() { // phpcs:ignore
 	);
 
 	// WP Localized globals. Use dynamic PHP stuff in JavaScript via `cgbGlobal` object.
-	wp_localize_script(
-		'cj_blocks-cgb-block-js',
-		'cgbGlobal', // Array containing dynamic data for a JS Global.
-		[
-			'pluginDirPath' => plugin_dir_path( __DIR__ ),
-			'pluginDirUrl'  => plugin_dir_url( __DIR__ ),
-			// Add more data here that you want to access from `cgbGlobal` object.
-		]
-	);
+	// wp_localize_script(
+	// 	'cj_blocks-cgb-block-js',
+	// 	'cgbGlobal', // Array containing dynamic data for a JS Global.
+	// 	[
+	// 		'pluginDirPath' => plugin_dir_path( __DIR__ ),
+	// 		'pluginDirUrl'  => plugin_dir_url( __DIR__ ),
+	// 		// Add more data here that you want to access from `cgbGlobal` object.
+	// 	]
+	// );
 
 	/**
 	 * Register Gutenberg block on server-side.

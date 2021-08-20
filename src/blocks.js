@@ -10,3 +10,4 @@
  */
 
 import './block-page-link/block.js';
+import './block-posts/block.js';

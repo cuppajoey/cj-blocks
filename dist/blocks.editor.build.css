@@ -4,16 +4,26 @@
  * Can include things like variables and mixins
  * that are used across the project.
 */
-/**
- * #.# Editor Styles
- *
- * CSS for just Backend enqueued after style.scss
- * which makes it higher in priority.
- */
-.wp-block-cgb-block-cj-blocks {
-  background: #bada55;
-  border: 0.2rem solid #292929;
-  color: #292929;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem; }
+.cj-autocomplete-container {
+  margin-bottom: 5px; }
+
+.cj-autocomplete-selection {
+  border: 1px solid black;
+  margin: 4px;
+  padding: 2px;
+  border-radius: 4px; }
+
+.cj-autocomplete-list {
+  position: absolute;
+  z-index: 1;
+  max-height: 100px;
+  overflow-y: scroll; }
+  .cj-autocomplete-list > div:nth-child(odd) {
+    background-color: #eeeeee; }
+  .cj-autocomplete-list > div:nth-child(even) {
+    background-color: #ffffff; }
+  .cj-autocomplete-list > div:focus {
+    background-color: #aaaaaa; }
+
+.cj-block-post-grid-excerpt > div > p:last-child {
+  margin-bottom: 0; }
